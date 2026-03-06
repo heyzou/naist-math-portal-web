@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://heyzou.github.io/naist-math-portal-web/sitemap.xml
