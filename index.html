@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NAIST数学 過去問解答アーカイブ | 奈良先端大 院試対策</title>
-    <meta name="description" content="NAIST（奈良先端科学技術大学院大学）合格者が作成した、指定教科書準拠の数学（線形代数・解析入門）自作解答集。途中式の省略なし、別解提示で院試突破をサポート。">
-    <meta name="keywords" content="NAIST, 数学, 解答, 奈良先端大, 院試, 過去問, 線形代数, 解析入門">
+    <title>NAIST指定教科書（数学）解答集 | 奈良先端大 院試対策</title>
+    <meta name="description" content="NAIST（奈良先端科学技術大学院大学）上位合格者が作成した、指定教科書準拠の数学（線形代数・解析入門）自作解答集。途中式の省略なし、別解提示で院試突破をサポート。">
+    <meta name="keywords" content="NAIST, 数学, 解答集, 奈良先端大, 院試, 指定教科書, 線形代数, 解析入門">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="NAIST数学 過去問解答アーカイブ">
-    <meta property="og:description" content="合格者による徹底解説。指定教科書準拠の自作解答集で合格を掴み取る。">
+    <meta property="og:title" content="NAIST指定教科書（数学）解答集">
+    <meta property="og:description" content="上位合格者による徹底解説。指定教科書準拠の自作解答集で合格を掴み取る。">
     <meta property="og:type" content="website">
 
     <!-- Styles -->
@@ -35,13 +35,19 @@
     <header>
         <div class="container">
             <nav>
-                <a href="#" class="logo">NAIST Math Archive</a>
-                <ul class="nav-links">
-                    <li><a href="#profile">Profile</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#samples">Samples</a></li>
-                    <li><a href="#resources">Resources</a></li>
-                </ul>
+                <a href="#" class="logo" data-i18n="logo">NAIST完全攻略</a>
+                <div class="nav-right">
+                    <ul class="nav-links">
+                        <li><a href="#profile" data-i18n="nav_profile">Profile</a></li>
+                        <li><a href="#features" data-i18n="nav_features">Features</a></li>
+                        <li><a href="#samples" data-i18n="nav_samples">Samples</a></li>
+                        <li><a href="#resources" data-i18n="nav_resources">Resources</a></li>
+                    </ul>
+                    <div class="lang-toggle" role="group" aria-label="Language switch">
+                        <button type="button" class="lang-btn is-active" data-lang="ja">JP</button>
+                        <button type="button" class="lang-btn" data-lang="en">EN</button>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -50,9 +56,12 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="container">
-                <h1>NAIST数学 過去問解答アーカイブ</h1>
-                <p>合格者が作成した、指定教科書準拠の徹底解説。最短ルートで院試数学をマスターする。</p>
-                <a href="#cta" class="btn btn-primary">完全版をnoteで購入する</a>
+                <h1 data-i18n="hero_title">NAIST指定教科書（数学）解答集</h1>
+                <p data-i18n="hero_subtitle">上位合格者が作成した、指定教科書準拠の徹底解説。</p>
+                <div class="action-stack">
+                    <button type="button" class="btn btn-primary js-open-note-modal" data-i18n="buy_btn">noteで解答集を購入する</button>
+                    <p class="record-badge record-badge-light" data-i18n="sales_record">累計販売数：14部（2026年3月時点）</p>
+                </div>
             </div>
         </section>
 
@@ -60,18 +69,28 @@
         <section id="profile" class="profile">
             <div class="container">
                 <div class="profile-grid">
-                    <div class="profile-img">
-                        <!-- Placeholder for portrait or icon -->
-                        <span style="font-size: 4rem; opacity: 0.2;">🎓</span>
-                    </div>
                     <div class="profile-content">
-                        <span class="profile-tag">作成者プロフィール</span>
-                        <h2>奈良先端大 合格・修了生</h2>
-                        <p>
-                            奈良先端科学技術大学院大学（NAIST）に、数学（線形代数・解析）で高得点（9割以上）を獲得して合格した実績を持つ筆者が、自身の学習過程で作成した解答集を公開しています。
+                        <span class="profile-tag" data-i18n="profile_tag">作成者プロフィール</span>
+                        <h2 data-i18n="profile_title">NAIST上位合格者が作成した実戦的な解答集</h2>
+                        <p data-i18n="profile_intro">
+                            関東私立大学・理工学部から外部院進でNAISTに上位合格。基礎力の積み上げで逆転した実体験をもとに、指定教科書の解答集を作成しています。
                         </p>
-                        <p>
-                            院試対策において、公式の解答が存在しない NAIST の数学過去問。独学で苦労した経験から、「受験生が本当に欲しかった解説」を形にしました。
+                        <div class="profile-highlights">
+                            <div class="profile-item">
+                                <strong data-i18n="profile_math_title">数学の実力</strong>
+                                <p data-i18n="profile_math_body">線形代数はA+（最高評価）。NAIST入試本番の数学（線形代数・解析）で満点を獲得。</p>
+                            </div>
+                            <div class="profile-item">
+                                <strong data-i18n="profile_tech_title">技術的な裏付け</strong>
+                                <p data-i18n="profile_tech_body">42Tokyoに2年間在籍。SSH全国大会で数学・情報部門1位。</p>
+                            </div>
+                            <div class="profile-item">
+                                <strong data-i18n="profile_english_title">英語力</strong>
+                                <p data-i18n="profile_english_body">TOEIC 800点台前半を取得し、出願要件を安定してカバー。</p>
+                            </div>
+                        </div>
+                        <p class="profile-note" data-i18n="profile_note">
+                            「地力で解けるようになる」ことを重視し、途中式・考え方・別解まで省略せずにまとめています。
                         </p>
                     </div>
                 </div>
@@ -81,19 +100,19 @@
         <!-- Features Section -->
         <section id="features" class="features">
             <div class="container">
-                <h2 style="text-align: center; margin-bottom: 3rem;">解答集の3つの強み</h2>
+                <h2 style="text-align: center; margin-bottom: 3rem;" data-i18n="features_title">解答集の3つの強み</h2>
                 <div class="features-grid">
                     <div class="feature-card">
-                        <h3>1. 指定教科書に完全準拠</h3>
-                        <p>NAISTの出題範囲である「線形代数」および「解析入門」の指定教科書に基づいた記法・解法を採用しています。</p>
+                        <h3 data-i18n="feature1_title">1. 指定教科書に完全準拠</h3>
+                        <p data-i18n="feature1_body">NAISTの出題範囲である「線形代数」および「解析入門」の指定教科書に基づいた記法・解法を採用しています。</p>
                     </div>
                     <div class="feature-card">
-                        <h3>2. 途中式の省略なし</h3>
-                        <p>計算課程を丁寧に記述。$\int x \ln x dx$ のような基本から、固有値問題の複雑な計算まで迷わず理解できます。</p>
+                        <h3 data-i18n="feature2_title">2. 途中式の省略なし</h3>
+                        <p data-i18n="feature2_body">計算課程を丁寧に記述。$\int x \ln x dx$ のような基本から、固有値問題の複雑な計算まで迷わず理解できます。</p>
                     </div>
                     <div class="feature-card">
-                        <h3>3. 頻出・別解の網羅</h3>
-                        <p>単なる解答だけでなく、頻出パターンや別解も提示。多角的な視点から問題へのアプローチ力を養います。</p>
+                        <h3 data-i18n="feature3_title">3. 頻出・別解の網羅</h3>
+                        <p data-i18n="feature3_body">単なる解答だけでなく、頻出パターンや別解も提示。多角的な視点から問題へのアプローチ力を養います。</p>
                     </div>
                 </div>
             </div>
@@ -102,7 +121,7 @@
         <!-- Samples Section -->
         <section id="samples" class="samples">
             <div class="container">
-                <h2 style="text-align: center; margin-bottom: 3rem;">サンプルPDF</h2>
+                <h2 style="text-align: center; margin-bottom: 3rem;" data-i18n="samples_title">サンプルPDF</h2>
                 <div class="samples-grid">
                     <div class="sample-container">
                         <div class="pdf-preview">
@@ -112,11 +131,11 @@
                         <div class="sample-info">
                             <div
                                 style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                                <h3>線形代数</h3>
+                                <h3 data-i18n="sample_linear_title">線形代数</h3>
                                 <a href="samples/NAIST_ストラング線形代数_sample.pdf" download class="btn btn-primary"
-                                    style="padding: 6px 16px; font-size: 0.8rem;">ダウンロード</a>
+                                    style="padding: 6px 16px; font-size: 0.8rem;" data-i18n="download_btn">ダウンロード</a>
                             </div>
-                            <p style="font-size: 0.9rem; color: var(--text-muted);">行列の対角化、線形写像、二次形式などの重要項目の解説サンプル。</p>
+                            <p style="font-size: 0.9rem; color: var(--text-muted);" data-i18n="sample_linear_desc">行列の対角化、線形写像、二次形式などの重要項目の解説サンプル。</p>
                         </div>
                     </div>
                     <div class="sample-container">
@@ -127,11 +146,11 @@
                         <div class="sample-info">
                             <div
                                 style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                                <h3>解析入門</h3>
+                                <h3 data-i18n="sample_analysis_title">解析入門</h3>
                                 <a href="samples/NAIST_ラング解析入門_sample.pdf" download class="btn btn-primary"
-                                    style="padding: 6px 16px; font-size: 0.8rem;">ダウンロード</a>
+                                    style="padding: 6px 16px; font-size: 0.8rem;" data-i18n="download_btn">ダウンロード</a>
                             </div>
-                            <p style="font-size: 0.9rem; color: var(--text-muted);">多変数関数の微積分、重積分、微分方程式の解説サンプル。</p>
+                            <p style="font-size: 0.9rem; color: var(--text-muted);" data-i18n="sample_analysis_desc">多変数関数の微積分、重積分、微分方程式の解説サンプル。</p>
                         </div>
                     </div>
                 </div>
@@ -141,13 +160,13 @@
         <!-- Resources Section -->
         <section id="resources" class="resources">
             <div class="container" style="text-align: center;">
-                <h2 style="margin-bottom: 1.5rem;">関連リソース</h2>
-                <p style="margin-bottom: 2rem; color: var(--text-muted);">GitHubにて、過去の出題傾向や学習ロードマップをまとめています。</p>
+                <h2 style="margin-bottom: 1.5rem;" data-i18n="resources_title">関連リソース</h2>
+                <p style="margin-bottom: 2rem; color: var(--text-muted);" data-i18n="resources_desc">GitHubにて、過去の出題傾向や学習ロードマップをまとめています。</p>
                 <a href="https://github.com/nakaiheizou/naist-math-solutions" target="_blank" class="feature-card"
                     style="display: inline-flex; align-items: center; gap: 1rem; padding: 1rem 2rem;">
                     <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub"
                         width="32">
-                    <span style="font-weight: 700;">GitHub Repository</span>
+                    <span style="font-weight: 700;" data-i18n="github_repo">GitHub Repository</span>
                 </a>
             </div>
         </section>
@@ -155,19 +174,209 @@
         <!-- CTA Section -->
         <section id="cta" class="container">
             <div class="cta-section">
-                <h2>合格への第一歩を踏み出そう</h2>
-                <p style="margin-bottom: 2.5rem; font-size: 1.2rem; opacity: 0.9;">全年度・全問題の解説を収録した完全版をご用意しています。</p>
-                <a href="https://note.com" target="_blank" class="btn btn-white buy-button">noteで「完全版」を購入する</a>
+                <h2 data-i18n="cta_title">指定教科書対策を今すぐ始めよう</h2>
+                <p style="margin-bottom: 2.5rem; font-size: 1.2rem; opacity: 0.9;" data-i18n="cta_desc">解答集は「線形代数」と「解析入門」の2つのnote記事で公開しています。</p>
+                <div class="action-stack">
+                    <p class="record-badge record-badge-dark" data-i18n="sales_record">累計販売数：14部（2026年3月時点）</p>
+                    <button type="button" class="btn btn-white buy-button js-open-note-modal" data-i18n="buy_btn">noteで解答集を購入する</button>
+                </div>
             </div>
         </section>
+
+        <div id="noteModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="noteModalTitle">
+            <div class="modal-panel">
+                <button type="button" class="modal-close" aria-label="閉じる">&times;</button>
+                <h3 id="noteModalTitle" data-i18n="modal_title">購入する解答集を選択</h3>
+                <p class="modal-description" data-i18n="modal_desc">以下から購入したい解答集を選んでください。</p>
+                <p class="record-badge record-badge-light modal-badge" data-i18n="sales_record">累計販売数：14部（2026年3月時点）</p>
+                <div class="modal-actions">
+                    <a href="https://note.com/naist_math/n/n346b34564b23" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-i18n="buy_linear">線形代数の解答集を購入する</a>
+                    <a href="https://note.com/naist_math/n/n7e8fce45a98b" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-i18n="buy_analysis">解析入門の解答集を購入する</a>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 NAIST Math Archive. All Rights Reserved.</p>
-            <p style="margin-top: 0.5rem; font-size: 0.8rem;">本サイトはNAIST公式のサイトではありません。個人の合格体験に基づいた対策用コンテンツです。</p>
+            <p>&copy; 2026 NAIST Math Textbook Solutions. All Rights Reserved.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.8rem;" data-i18n="footer_note">本サイトはNAIST公式のサイトではありません。個人の合格体験に基づいた対策用コンテンツです。</p>
         </div>
     </footer>
+
+    <script>
+        (() => {
+            const modal = document.getElementById('noteModal');
+            const openButtons = document.querySelectorAll('.js-open-note-modal');
+            const closeButton = modal.querySelector('.modal-close');
+            const langButtons = document.querySelectorAll('.lang-btn');
+            const translatableElements = document.querySelectorAll('[data-i18n]');
+            const focusableSelectors = 'a[href], button:not([disabled])';
+            const metaDescription = document.querySelector('meta[name="description"]');
+            const ogTitle = document.querySelector('meta[property="og:title"]');
+            const ogDescription = document.querySelector('meta[property="og:description"]');
+            let lastFocusedElement = null;
+            const defaultLang = 'ja';
+
+            const translations = {
+                ja: {
+                    page_title: 'NAIST指定教科書（数学）解答集 | 奈良先端大 院試対策',
+                    meta_description: 'NAIST（奈良先端科学技術大学院大学）上位合格者が作成した、指定教科書準拠の数学（線形代数・解析入門）自作解答集。途中式の省略なし、別解提示で院試突破をサポート。',
+                    og_title: 'NAIST指定教科書（数学）解答集',
+                    og_description: '上位合格者による徹底解説。指定教科書準拠の自作解答集で合格を掴み取る。',
+                    logo: 'NAIST完全攻略',
+                    nav_profile: 'プロフィール',
+                    nav_features: '特長',
+                    nav_samples: 'サンプル',
+                    nav_resources: '関連資料',
+                    hero_title: 'NAIST指定教科書（数学）解答集',
+                    hero_subtitle: '上位合格者が作成した、指定教科書準拠の徹底解説。',
+                    buy_btn: 'noteで解答集を購入する',
+                    sales_record: '累計販売数：14部（2026年3月時点）',
+                    profile_tag: '作成者プロフィール',
+                    profile_title: 'NAIST上位合格者が作成した実戦的な解答集',
+                    profile_intro: '関東私立大学・理工学部から外部院進でNAISTに上位合格。基礎力の積み上げで逆転した実体験をもとに、指定教科書の解答集を作成しています。',
+                    profile_math_title: '数学の実力',
+                    profile_math_body: '線形代数はA+（最高評価）。NAIST入試本番の数学（線形代数・解析）で満点を獲得。',
+                    profile_tech_title: '技術的な裏付け',
+                    profile_tech_body: '42Tokyoに2年間在籍。SSH全国大会で数学・情報部門1位。',
+                    profile_english_title: '英語力',
+                    profile_english_body: 'TOEIC 800点台前半を取得し、出願要件を安定してカバー。',
+                    profile_note: '「地力で解けるようになる」ことを重視し、途中式・考え方・別解まで省略せずにまとめています。',
+                    features_title: '解答集の3つの強み',
+                    feature1_title: '1. 指定教科書に完全準拠',
+                    feature1_body: 'NAISTの出題範囲である「線形代数」および「解析入門」の指定教科書に基づいた記法・解法を採用しています。',
+                    feature2_title: '2. 途中式の省略なし',
+                    feature2_body: '計算課程を丁寧に記述。$\\int x \\ln x dx$ のような基本から、固有値問題の複雑な計算まで迷わず理解できます。',
+                    feature3_title: '3. 頻出・別解の網羅',
+                    feature3_body: '単なる解答だけでなく、頻出パターンや別解も提示。多角的な視点から問題へのアプローチ力を養います。',
+                    samples_title: 'サンプルPDF',
+                    sample_linear_title: '線形代数',
+                    download_btn: 'ダウンロード',
+                    sample_linear_desc: '行列の対角化、線形写像、二次形式などの重要項目の解説サンプル。',
+                    sample_analysis_title: '解析入門',
+                    sample_analysis_desc: '多変数関数の微積分、重積分、微分方程式の解説サンプル。',
+                    resources_title: '関連リソース',
+                    resources_desc: 'GitHubにて、過去の出題傾向や学習ロードマップをまとめています。',
+                    github_repo: 'GitHub Repository',
+                    cta_title: '指定教科書対策を今すぐ始めよう',
+                    cta_desc: '解答集は「線形代数」と「解析入門」の2つのnote記事で公開しています。',
+                    modal_title: '購入する解答集を選択',
+                    modal_desc: '以下から購入したい解答集を選んでください。',
+                    buy_linear: '線形代数の解答集を購入する',
+                    buy_analysis: '解析入門の解答集を購入する',
+                    footer_note: '本サイトはNAIST公式のサイトではありません。個人の合格体験に基づいた対策用コンテンツです。'
+                },
+                en: {
+                    page_title: 'NAIST Designated Math Textbook Solutions | NAIST Entrance Exam Prep',
+                    meta_description: 'A designated textbook-based math solution set (Linear Algebra and Introductory Analysis) created by a top NAIST admit. Detailed steps and alternative solutions for exam preparation.',
+                    og_title: 'NAIST Designated Math Textbook Solutions',
+                    og_description: 'Thorough explanations by a top NAIST admit, based on designated textbooks.',
+                    logo: 'NAIST Complete Guide',
+                    nav_profile: 'Profile',
+                    nav_features: 'Features',
+                    nav_samples: 'Samples',
+                    nav_resources: 'Resources',
+                    hero_title: 'NAIST Designated Math Textbook Solutions',
+                    hero_subtitle: 'Thorough, textbook-based explanations created by a top NAIST admit.',
+                    buy_btn: 'Buy the solutions on note',
+                    sales_record: 'Total sales: 14 copies (as of March 2026)',
+                    profile_tag: 'Author Profile',
+                    profile_title: 'A practical solution set by a top NAIST admit',
+                    profile_intro: 'From a private university in Kanto (Engineering) to top-level admission to NAIST as an external applicant. This solution set is built from a real study process focused on fundamentals.',
+                    profile_math_title: 'Math Strength',
+                    profile_math_body: 'A+ (highest grade) in Linear Algebra. Perfect score in the NAIST math exam (Linear Algebra and Analysis).',
+                    profile_tech_title: 'Technical Foundation',
+                    profile_tech_body: 'Enrolled in 42Tokyo for two years. 1st place in the SSH National Competition (Math & Informatics division).',
+                    profile_english_title: 'English',
+                    profile_english_body: 'Scored in the low 800s on TOEIC, stably covering language requirements.',
+                    profile_note: 'Focused on helping you solve problems on your own, with full steps, reasoning, and alternatives.',
+                    features_title: 'Three strengths of this solution set',
+                    feature1_title: '1. Fully aligned with designated textbooks',
+                    feature1_body: 'Notation and methods are aligned with the designated textbooks for Linear Algebra and Introductory Analysis.',
+                    feature2_title: '2. No skipped steps',
+                    feature2_body: 'Calculations are written out in detail, from basics like $\\int x \\ln x dx$ to complex eigenvalue problems.',
+                    feature3_title: '3. Frequent patterns and alternative solutions',
+                    feature3_body: 'Beyond single answers, this set covers frequent patterns and alternative approaches.',
+                    samples_title: 'Sample PDFs',
+                    sample_linear_title: 'Linear Algebra',
+                    download_btn: 'Download',
+                    sample_linear_desc: 'Sample explanations for diagonalization, linear maps, quadratic forms, and other key topics.',
+                    sample_analysis_title: 'Introductory Analysis',
+                    sample_analysis_desc: 'Sample explanations for multivariable calculus, multiple integrals, and differential equations.',
+                    resources_title: 'Resources',
+                    resources_desc: 'The GitHub repository includes trends from past exams and a study roadmap.',
+                    github_repo: 'GitHub Repository',
+                    cta_title: 'Start preparing with the designated textbooks now',
+                    cta_desc: 'The solutions are available as two separate note articles: Linear Algebra and Introductory Analysis.',
+                    modal_title: 'Select the solution set to purchase',
+                    modal_desc: 'Choose the subject you want to purchase below.',
+                    buy_linear: 'Buy Linear Algebra solutions',
+                    buy_analysis: 'Buy Introductory Analysis solutions',
+                    footer_note: 'This site is not an official NAIST website. It is personal prep content based on admission experience.'
+                }
+            };
+
+            const setLanguage = (lang) => {
+                const dict = translations[lang] || translations[defaultLang];
+                document.documentElement.lang = lang;
+                document.title = dict.page_title;
+                metaDescription.setAttribute('content', dict.meta_description);
+                ogTitle.setAttribute('content', dict.og_title);
+                ogDescription.setAttribute('content', dict.og_description);
+
+                translatableElements.forEach((element) => {
+                    const key = element.dataset.i18n;
+                    if (dict[key]) element.textContent = dict[key];
+                });
+
+                langButtons.forEach((button) => {
+                    button.classList.toggle('is-active', button.dataset.lang === lang);
+                });
+
+                localStorage.setItem('site_lang', lang);
+                if (window.MathJax && window.MathJax.typesetPromise) window.MathJax.typesetPromise();
+            };
+
+            const openModal = () => {
+                lastFocusedElement = document.activeElement;
+                modal.classList.add('is-open');
+                modal.setAttribute('aria-hidden', 'false');
+                const firstFocusable = modal.querySelector(focusableSelectors);
+                if (firstFocusable) firstFocusable.focus();
+            };
+
+            const closeModal = () => {
+                modal.classList.remove('is-open');
+                modal.setAttribute('aria-hidden', 'true');
+                if (lastFocusedElement) lastFocusedElement.focus();
+            };
+
+            openButtons.forEach((button) => {
+                button.addEventListener('click', openModal);
+            });
+
+            closeButton.addEventListener('click', closeModal);
+
+            modal.addEventListener('click', (event) => {
+                if (event.target === modal) closeModal();
+            });
+
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' && modal.classList.contains('is-open')) {
+                    closeModal();
+                }
+            });
+
+            langButtons.forEach((button) => {
+                button.addEventListener('click', () => setLanguage(button.dataset.lang));
+            });
+
+            const storedLang = localStorage.getItem('site_lang');
+            const browserLang = navigator.language && navigator.language.toLowerCase().startsWith('ja') ? 'ja' : 'en';
+            setLanguage(storedLang || browserLang || defaultLang);
+        })();
+    </script>
 </body>
 
 </html>
