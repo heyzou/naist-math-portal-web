@@ -223,36 +223,53 @@ nav {
     margin-bottom: 1rem;
 }
 
-.profile-highlights {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem;
-    margin: 1.5rem 0;
-}
-
-.profile-item {
-    background: var(--card-bg);
+.profile-dl {
+    background: #ffffff;
     border: 1px solid var(--border-color);
-    border-radius: 12px;
-    padding: 1rem;
+    border-radius: 16px;
+    overflow: hidden;
 }
 
-.profile-item strong {
-    display: block;
+.profile-dl-row {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 1.25rem;
+    padding: 1.1rem 1.25rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.profile-dl-row:first-child {
+    border-top: none;
+}
+
+.profile-dl dt {
+    font-weight: 700;
     color: var(--primary-color);
-    margin-bottom: 0.4rem;
     font-size: 0.95rem;
 }
 
-.profile-item p {
+.profile-dl dd {
+    margin: 0;
     color: var(--text-muted);
-    font-size: 0.92rem;
-    line-height: 1.55;
+    font-size: 0.95rem;
+    line-height: 1.65;
 }
 
-.profile-note {
-    margin-top: 0.5rem;
-    font-weight: 500;
+.profile-dl strong {
+    font-size: 1.05em;
+    color: var(--text-color);
+}
+
+.profile-score-rate {
+    font-size: 1.08em;
+    font-weight: 800;
+    color: #000000;
+}
+
+.profile-list {
+    margin: 0.25rem 0 0;
+    padding-left: 1.1rem;
+    list-style: disc;
 }
 
 /* Features Section */
@@ -421,8 +438,9 @@ footer {
         max-width: 100%;
     }
 
-    .profile-highlights {
+    .profile-dl-row {
         grid-template-columns: 1fr;
+        gap: 0.5rem;
     }
     
     .samples-grid {
